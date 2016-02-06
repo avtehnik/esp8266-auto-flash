@@ -1,6 +1,6 @@
 # esp8266 auto flash tool
 
-If you have serial port with cp2112 ic looks like this
+If you have serial port with cp2102 ic looks like this
 
 ![alt tag](https://raw.githubusercontent.com/avtehnik/esp8266-auto-flash/master/cp2102-serial.png)
 
