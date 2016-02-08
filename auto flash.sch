@@ -731,15 +731,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="MPN" value=""/>
 <attribute name="OC_NEWARK" value="unknown"/>
 </part>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X7" device="/90"/>
-<part name="JP2" library="pinhead" deviceset="PINHD-2X4" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X7" device="/90" value="cp2102"/>
+<part name="JP2" library="pinhead" deviceset="PINHD-2X4" device="" value="ESP-01"/>
 <part name="U1" library="SparkFun-PowerIC" deviceset="V_REG_LM1117" device="SOT223"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="R3" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="10k"/>
-<part name="R1" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="10k"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="10k"/>
+<part name="R1" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="12k"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="0.3OHM-1/8W-1%(0805)" device="" value="12k"/>
 </parts>
 <sheets>
 <sheet>
@@ -761,7 +761,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U1" gate="G$1" x="78.74" y="55.88" rot="MR0"/>
 <instance part="SUPPLY1" gate="GND" x="78.74" y="45.72"/>
 <instance part="SUPPLY2" gate="GND" x="20.32" y="43.18"/>
-<instance part="SUPPLY3" gate="GND" x="106.68" y="45.72"/>
+<instance part="SUPPLY3" gate="GND" x="91.44" y="48.26" rot="R270"/>
 <instance part="R3" gate="G$1" x="43.18" y="50.8"/>
 <instance part="R1" gate="G$1" x="60.96" y="35.56"/>
 <instance part="R2" gate="G$1" x="60.96" y="48.26"/>
@@ -843,7 +843,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="JP1" gate="A" pin="2"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
-<wire x1="99.06" y1="48.26" x2="106.68" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -857,7 +857,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="48.26" y="55.88"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="ESP-01" class="0">
 <segment>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="99.06" y1="43.18" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
